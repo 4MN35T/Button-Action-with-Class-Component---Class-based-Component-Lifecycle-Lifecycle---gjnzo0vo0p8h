@@ -9,7 +9,10 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
-				{ /* Do not remove this main div!! */ }
+		{
+    		(displayMessage === false)?(null):(<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>)
+    	}
+		<button id="click" onClick={()=>setDisplayMessage(true)}>Click me</button>
     		</div>
     	);
     }
